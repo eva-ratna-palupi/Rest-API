@@ -2,8 +2,7 @@
 
 module.exports= function(app){
     var jsonku = require('./controller');
-
-    app.routes('/')
+    app.route('/')
         .get(jsonku.index);
 
 }
